@@ -1,5 +1,4 @@
-public class Shoes{
-
+public class Shoes {
     String reference = "";
     float price = 0f;
     int size = 0;
@@ -7,8 +6,7 @@ public class Shoes{
     boolean send_method = false;
     int cant_colours = 0;
 
-    public Shoes(String reference_param, float price_param, int size_param, String photo_route_param,
-            boolean send_method_param, int cant_colours_param) {
+    public Shoes(String reference_param, float price_param, int size_param, String photo_route_param, boolean send_method_param, int cant_colours_param) {
         this.reference = reference_param;
         this.price = price_param;
         this.size = size_param;
@@ -36,6 +34,11 @@ public class Shoes{
     public boolean isSend_method() {
         return send_method;
     }
+
+    public int getcant_colours() {
+        return cant_colours;
+    }
+}
 
     public int getcant_colours() {
         return cant_colours;
