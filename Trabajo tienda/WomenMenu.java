@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class WomanMenu {
+public class WomenMenu {
 
     Scanner input = new Scanner(System.in);
 
@@ -19,11 +19,23 @@ public class WomanMenu {
                 option_submenu = input.nextInt();
                 if (option_submenu == 1) {
                     Running instance_running = new Running();
-                    instance_running.addRunningShoes();
+                    instance_running.addRunningShoesWoman();
+                    System.out.println("Filtro por talla 38");
+                    System.out.println(instance_running.sizeInformationShoes());
+                    System.out.println("Filtro por precio mayor a 150");
+                    System.out.println(instance_running.priceInformationShoes());
+                    System.out.println("Filtro por envio");
+                    System.out.println(instance_running.sendInformationShoes());
+                    System.out.println("Sin filtro");
                     System.out.println(instance_running.showInformationShoes());
                 } else if (option_submenu == 2) {
-                    Classic instance_classic = new Classic();
+                    Clasic instance_classic = new Clasic();
                     instance_classic.addClassicShoes();
+                    System.out.println("Filto por más de 5 colores");
+                    System.out.println(instance_classic.coloursInformationShoes());
+                    System.out.println("Filtro por precio mayor a 150");
+                    System.out.println(instance_classic.priceInformationShoes());
+                    System.out.println("Sin filtro");
                     System.out.println(instance_classic.showInformationShoes());
                 } else {
                     System.out.println("Opción no válida");
