@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+public class main {
     static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -13,11 +13,11 @@ public class Main{
         menu_option = input.nextInt();
         switch (menu_option) {
             case 1:
-                WomanMenu instance_woman = new WomanMenu();
+                WomenMenu instance_woman = new WomenMenu();
                 instance_woman.option_menu();
                 break;
             case 2:
-                WomanMenu instance_man = new WomanMenu();
+                ManMenu instance_man = new ManMenu();
                 instance_man.option_menu();
                 break;
             case 3:
