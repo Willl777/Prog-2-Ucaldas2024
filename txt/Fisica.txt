@@ -1,0 +1,4 @@
+
+Fisica 1,5,Juan,656,juam.@
+Fisica 2,5,Angie,666,ang123.@
+Fisica 3,5,Martin,534466,taco123w.@
