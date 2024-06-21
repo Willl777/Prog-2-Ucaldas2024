@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h3> Lista de Usuarios </h3>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo Electrónico</th>
+                    <th>Película</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Adultos</th>
+                    <th>Niños</th>
+                    <th>Preferencia de Asientos</th>
+                    <th>Notificaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="usuario : ${usuarioListAttribute}">
+                    <td th:text="${usuario.nombre}"></td>
+                    <td th:text="${usuario.apellido}"></td>
+                    <td th:text="${usuario.correo}"></td>
+                    <td th:text="${usuario.pelicula}"></td>
+                    <td th:text="${usuario.fecha}"></td>
+                    <td th:text="${usuario.hora}"></td>
+                    <td th:text="${usuario.adultos}"></td>
+                    <td th:text="${usuario.niños}"></td>
+                    <td th:text="${usuario.preferencia}"></td>
+                    <td th:text="${usuario.notificaciones}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
